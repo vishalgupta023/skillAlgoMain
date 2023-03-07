@@ -1,0 +1,20 @@
+.location-card{
+    display: flex;
+}
+.location-container{
+    border: 1px solid rgb(217, 209, 209);
+    display: flex;
+   width: 160px;
+   gap: 10px;
+   padding: 8px 0px 8px 8px;
+   border-radius: 10px;
+}
+
+.state{
+    display: flex;
+    flex-direction: column;
+}
+.state p{
+    margin: 0;
+    padding: 0;
+}

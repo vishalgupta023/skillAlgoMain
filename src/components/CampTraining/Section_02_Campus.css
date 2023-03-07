@@ -1,0 +1,138 @@
+.sec_02_h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+.companies {
+
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    animation: 60s linear 0s infinite normal none running animation-1rnxxhw;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+
+.companies img {
+    width: 8%;
+    padding-left: 25px;
+}
+
+.deskimg {
+    margin: 60px;
+}
+
+.deskimg img {
+    width: 90%;
+    margin: 50px;
+}
+
+.marquee {
+    background-color: transparent;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5% auto;
+}
+
+.marquee img {
+    display: inline-block;
+    color: black;
+
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    left: 100%;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee:hover img {
+    animation-play-state: paused;
+}
+
+.marquee img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.marquee img:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.marquee img:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.marquee img:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.marquee img:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.marquee img:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+.marquee img:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+.marquee img:nth-child(8) {
+    animation-delay: 2.1s;
+}
+
+.marquee img:nth-child(9) {
+    animation-delay: 2.4s;
+}
+
+.marquee img:nth-child(10) {
+    animation-delay: 2.7s;
+}
+
+.marquee img:nth-child(11) {
+    animation-delay: 3.0s;
+}
+
+.marquee img:nth-child(12) {
+    animation-delay: 3.3s;
+}
+
+.marquee img:nth-child(13) {
+    animation-delay: 3.6s;
+}
+
+.marquee img:nth-child(14) {
+    animation-delay: 3.9s;
+}
+
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@media only screen and (max-width: 70.95em) {
+    .deskimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0px;
+        padding-bottom: 40px;
+    }
+
+    .deskimg img {
+        width: 100vw;
+        margin: 0px;
+    }
+}

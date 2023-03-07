@@ -1,0 +1,9 @@
+
+/*Responsiveness */
+@media screen and (max-width: 600px) { 
+    .sidebar{
+        /* display: block; */
+        
+    }
+
+}

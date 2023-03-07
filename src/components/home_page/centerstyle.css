@@ -1,0 +1,41 @@
+.centers-container{
+    max-width: 1100px;
+    margin: 0px auto;
+}
+/* .center-details{
+    border: 2px solid black;
+} */
+.center-char{
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.locations{
+    position: relative;
+    margin-bottom: 50px;
+}
+.location{
+    border-left: 1px solid #5AD6A0;
+    border-right: 1px solid #5AD6A0;
+    border-radius: 10px;
+    max-width:1000px;
+    margin: 0px auto;
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.location::-webkit-scrollbar{
+    display: none;
+}
+.scroll-buttons button{
+    border: none;
+    position: absolute;
+    bottom: 8px;
+    font-size: 30px;
+    background-color:transparent;
+    color: #6749C6;
+}
+.right-btn{
+   left: 97%;
+}

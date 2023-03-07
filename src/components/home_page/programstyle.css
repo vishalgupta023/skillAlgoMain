@@ -1,0 +1,90 @@
+.main-programs{
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+    
+}
+.overflow-container{
+    border: 2px solid green;
+    overflow: hidden;
+
+}
+/* Color code:-
+Purple:-#6749C6
+Light Green:-#5AD6A0 */
+.program-container{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    gap: 20px;
+}
+
+/* CARD STYLING */
+
+.card-container{
+    text-align: start;
+    max-width:250px !important;
+    min-width: 150px !important;
+    background-color: #fff;
+}
+.card-img{
+    position: relative;
+}
+.watch-count{
+    position: absolute;
+    top:75%;
+    left: 10px;
+    background: #fff;
+    color: #6749C6;
+    padding: 0px 5px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.row1{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+.langauge{
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(207, 198, 198, 0.733);
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.subject-name{
+    text-transform:uppercase;
+    font-size: 14px;
+    color: #5AD6A0 ;
+}
+.card-title{
+    color: #555;
+}
+
+/* RESPONSIVENESS FOR MEDIUM SIZE SCREEN */
+
+@media (max-width:1155px){
+    .program-container{
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    .overflow-container{
+        width: 98%;
+        margin: 0px auto;
+    }
+    .card-container{
+        text-align: start;
+        max-width:250px !important;
+        min-width: 240px !important;
+        background-color: #fff;
+    }
+}

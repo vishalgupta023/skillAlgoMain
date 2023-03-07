@@ -1,0 +1,394 @@
+/* *{
+    border: 1px solid red;
+} */
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    background-color: rgb(247, 247, 255);
+    padding: 2vmax 12.8vmax;
+    min-height: 150vh;
+    position: inherit;
+    /* grid-template-areas: 'sidebar childContainer'; */
+}
+
+.childContainer{
+    padding: 2rem;
+    grid-column-start: 2;
+    /* grid-area: childContainer; */
+    /* overflow: auto; */
+}
+
+
+/* Batches */
+
+.heading{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    padding: 2rem;
+}
+.heading img{
+    width: 5rem;
+}
+.heading h1{
+    font-size: 3rem;
+    margin-top: 0;
+    margin-left: 2rem;
+}
+
+.seeall{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.seeall h2{
+    font-size: 1.5rem;
+}
+
+.seeall a{
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+.batchCarousel{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+    width: 50vw;
+    /* height: 50vh; */
+    /* flex-wrap: wrap; */
+}
+.carousel{
+    width: 100%;
+    /* border: 1px solid red; */
+    /* padding: 10px; */
+}
+.react-multiple-carousel__arrow--right {
+    right: calc(0% + 1px) !important;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: calc(0% + 1px) !important;
+}
+
+.react-multiple-carousel__arrow{
+    background: rgb(0 0 0 / 25%) !important;
+}
+
+.batch{
+    max-width: 18vmax;
+    margin: 10px;
+    /* box-shadow: 0 0 5px rgba(15, 15, 15, 0.26); */
+    box-shadow: 0 0 5px var(--clr-secondary);
+    /* border: 0.2px solid black; */
+    /* margin-right: 20px; */
+    /* background-color: rgb(253, 117, 117); */
+    /* margin-bottom: 6rem; */
+    /* border: 1px solid red; */
+}
+
+.batch img{
+    width: 100%;
+}
+.batch > div{
+    padding:10px;
+}
+
+.keywords{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.keywords p{
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 2px 4px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 5px;
+}
+
+.batch h2{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.stats{
+    margin-bottom: 2rem;
+}
+
+.stats ul li{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.stats ul li p{
+    font-size: 12px;
+    margin-left: 10px;
+}
+/* .clock , .profile{
+    width: 1.5em !important;
+} */
+.clock{
+    font-size: 17px !important;
+}
+.profile{
+    font-size: 20px !important;
+}
+
+.schedule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.schedule svg{
+    margin-right: 10px;
+}
+
+.topics div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topics div a{
+    /* margin-right: 2rem; */
+    margin-top: 1rem;
+    padding:1vmax 2vmax;
+    min-width: 10rem;
+    /* background-color: red; */
+    text-decoration: none;
+    color: black;
+    border-top: 2px solid var(--clr-secondary);
+    border-bottom:2px solid var(--clr-secondary);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+}
+
+.testseries{
+    display: flex;
+    width: 50vw;
+}
+
+/* .testseries .carousel{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+.testseries div a{
+    height: 12rem;
+    max-height: 13rem;
+    margin-top: 1rem;
+    margin-right: 10px;
+    padding:1vmax;
+    max-width: 14rem;
+    /* background-color: red; */
+    text-decoration: none;  
+    color: black;
+    border-top: 2px solid var(--clr-primary);
+    border-bottom:2px solid var(--clr-primary);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+}
+
+.testseries div a h2{
+    font-size: 20px;
+}
+
+.testseries div a div{
+    margin-top: 1rem;
+}
+
+.testseries div a > div > span{
+    display: inline-block;
+    padding:0 0.2rem;
+    background-color: var(--clr-secondary);
+    margin-top: 0;
+}
+
+
+.upcomingCourses{
+    margin:3rem 0;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.course{
+    
+    max-width: 18vmax;
+    margin:3px 10px;
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    box-shadow: 0 0 5px var(--clr-primary);
+    /* background-color: rgb(253, 117, 117); */
+}
+.imgdiv{
+    position: relative;
+}
+.course div img{
+    width: 100%;
+}
+
+.course div svg{
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top:15px;
+    right:15px;
+}
+
+.imgdiv + div{
+    padding: 10px;
+}
+
+.imgdiv + div div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.course  >div>div> span{
+    margin-right: 10px;
+    font-size: 12px;
+    background-color: rgb(238, 238, 238);
+    padding: 0 4px;
+}
+.course>div>div>p{
+    color: var(--clr-secondary);
+    font-size: 14px;
+}
+
+
+.course  >div >p,.course  >div >span{
+    color: rgb(130, 130, 130);
+    font-size:13px ;
+}
+
+.course  div h2{
+    font-size: 13px;
+    margin: 13px 0;
+    font-weight: 500;
+}
+
+.imgdiv + div h3{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 14px;
+}
+
+
+/*Responsiveness */
+@media screen and (max-width: 600px) { 
+    .sidebar{
+        display: none;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+        /* background-color: red; */
+        padding: 2vmax;
+        width: 90%;
+    }
+
+    .childContainer{
+        padding: 0;
+        width: 23%;
+    }
+
+    .heading{
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .heading img{
+        width: 3rem;
+    }
+    .heading h1{
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    .seeall{
+        margin-top: 2rem;
+        width: 107%;
+    }
+
+    .seeall h2{
+        font-size: 1rem;
+    }
+
+    .seeall a{
+        font-size: 1rem;
+    }
+
+
+    /* batch carousel */
+
+    .batchCarousel{
+        width: 93vw;
+    }
+
+    .batch{
+        max-width: 42vmax;
+        margin: 10px 3px;
+        margin-right: 10px;
+        /* margin-left: 28px; */
+    }
+
+    .batch > div{
+        padding: 16px;
+    }
+
+    /* topics */
+
+    .topics div a{
+        padding:2vmax;
+        min-width: 19rem;
+        margin-top: 1.5rem;   
+    }
+
+    /* test series */
+
+    .testseries{
+        width: 96vw;
+    }
+
+    .testseries div a{
+        max-width: 15rem;
+        max-height: 10rem;
+    }
+
+    .testseries div a div{
+        margin-top: 0;
+    }
+    .testseries div a > div > span{
+        margin-top: 1rem;
+    }
+
+    /* Upcoming Courses */
+
+    .upcomingCourses{
+        width: 95vw;
+    }
+
+    .course{
+        max-width: 37vmax;  
+        margin: 3px 10px;   
+    }
+}
