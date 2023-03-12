@@ -5,7 +5,6 @@
     
 }
 .overflow-container{
-    border: 2px solid green;
     overflow: hidden;
 
 }
@@ -17,8 +16,27 @@ Light Green:-#5AD6A0 */
     overflow: hidden;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 2px solid red;
     gap: 20px;
+    scroll-behavior: smooth;
+}
+.programs-head{
+    position: relative;
+}
+.programs-head button{
+    position: absolute;
+    top: 15px;
+    padding: 0px 5px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #5AD6A0;
+    border: none;
+    display: none;
+}
+.lessTnBtn{
+    left:85%;
+}
+.greatTnBtn{
+    left: 90%;
 }
 
 /* CARD STYLING */
@@ -86,5 +104,8 @@ Light Green:-#5AD6A0 */
         max-width:250px !important;
         min-width: 240px !important;
         background-color: #fff;
+    }
+    .programs-head button{
+        display: block;
     }
 }

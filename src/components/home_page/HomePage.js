@@ -15,7 +15,7 @@ export default function HomePage() {
         <Programs/>
         <About/>
         <Centers/>
-        <Details/>
+        {/* <Details/> */}
         <Footer/>   
     </div>
   )
